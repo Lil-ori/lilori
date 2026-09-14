@@ -52,8 +52,8 @@ ul{list-style:none}
 button{font-family:inherit;cursor:pointer}
 :focus-visible{outline:2px solid var(--ice-deep);outline-offset:3px}
 
-.wrap{max-width:1220px;margin:0 auto;padding:0 24px}
-@media(max-width:720px){.wrap{padding:0 12px}}
+.wrap{max-width:1220px;margin:0 auto;padding:0 48px}
+@media(max-width:720px){.wrap{padding:0 24px}}
 
 .eyebrow{font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--ice-deep);letter-spacing:.02em}
 
@@ -64,13 +64,13 @@ h1,h2,h3,h4{font-family:var(--sans);font-weight:700;letter-spacing:-.02em}
 nav{
   position:fixed;inset:0 0 auto;z-index:200;
   display:flex;align-items:center;justify-content:space-between;
-  padding:22px 24px;
+  padding:22px 48px;
   background:rgba(255,255,255,.7);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid transparent;
   transition:background .3s var(--ease),border-color .3s var(--ease),padding .3s var(--ease);
 }
-nav.on{background:rgba(255,255,255,.92);border-color:var(--line);padding:14px 24px}
+nav.on{background:rgba(255,255,255,.92);border-color:var(--line);padding:14px 48px}
 .nav-logo{display:flex;align-items:center;text-decoration:none}
 .nav-logo img{height:24px;width:auto}
 .nav-links{display:flex;align-items:center;gap:36px}
@@ -86,8 +86,8 @@ nav.on{background:rgba(255,255,255,.92);border-color:var(--line);padding:14px 24
 .nav-burger span{width:22px;height:1.5px;background:var(--ink)}
 
 @media(max-width:960px){
-  nav{padding:16px 12px}
-  nav.on{padding:12px 12px}
+  nav{padding:16px 24px}
+  nav.on{padding:12px 24px}
   .nav-actions{display:none}
   .nav-links{position:fixed;top:0;left:0;width:100%;height:100vh;background:var(--paper);flex-direction:column;justify-content:center;gap:30px;transform:translateY(-100%);transition:transform .4s var(--ease);}
   .nav-links.open{transform:translateY(0)}
@@ -248,13 +248,13 @@ section{padding:104px 0;position:relative}
 @media(max-width:720px){.work-grid{grid-template-columns:1fr}}
 
 /* ============ CTA BAND (light ice, filled black button) ============ */
-.cta-band{background:var(--ice-pale);padding:96px 0;position:relative;overflow:hidden;border-radius:32px;margin:0 12px;width:auto}
-.cta-band .wrap{max-width:none;padding:0 28px}
+.cta-band{background:var(--ice-pale);padding:96px 0;position:relative;overflow:hidden;border-radius:32px;margin:0 24px;width:auto}
+.cta-band .wrap{max-width:none;padding:0 56px}
 .cta-inner{position:relative;z-index:1;max-width:680px}
 .cta-band h2{font-size:clamp(30px,4vw,48px);color:var(--ink);line-height:1.05;letter-spacing:-.02em}
 .cta-band p{margin-top:18px;color:var(--ink-soft);font-size:16px;max-width:46ch}
 .cta-band .btn{margin-top:34px}
-@media(max-width:720px){.cta-band{margin:0;border-radius:0;padding:64px 0}.cta-band .wrap{padding:0 12px}}
+@media(max-width:720px){.cta-band{margin:0;border-radius:0;padding:64px 0}.cta-band .wrap{padding:0 24px}}
 
 /* ============ FOOTER (light, newsletter) ============ */
 footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
@@ -390,7 +390,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
   <div class="wrap hero-inner">
     <div class="hero-kicker"><span class="dot"></span><span>Web design, marketing &amp; SEO studio</span></div>
     <h1>We make your business <span class="serif">easy to find.</span></h1>
-    <p>Lilori designs and builds websites, manages the blog and social content behind them, and handles the ongoing SEO work that helps your business get found. One small team, all working toward the same goal.</p>
+    <p>Lilori designs and builds websites, runs the blog and social content behind them, and does the slow, unglamorous SEO work that turns traffic into a habit — all from one small team.</p>
     <div class="hero-actions">
       <a href="contact.html" class="btn btn-fill">Start a project</a>
       <a href="#services" class="btn btn-ghost">See what we do</a>
@@ -423,7 +423,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
       <div class="svc-body">
         <div class="svc-eyebrow">Design &amp; development</div>
         <h3>Websites</h3>
-        <p>Custom-designed and built around your business. No cookie-cutter templates. Just fast, accessible websites that look great, work beautifully, and are easy to manage.</p>
+        <p>Custom-designed, hand-built sites — not a theme with your logo dropped in. Fast, accessible, and easy for your own team to update.</p>
         <ul class="svc-specs">
           <li>Design &amp; brand systems</li>
           <li>Front-end development</li>
@@ -445,7 +445,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
       <div class="svc-body">
         <div class="svc-eyebrow">Content &amp; social</div>
         <h3>Marketing</h3>
-        <p>Consistent content without adding another thing to your plate. We handle blog posts, social media, and email content that keeps your business active, relevant, and in front of the right people.</p>
+        <p>The blog posts, social calendars, and email sends that keep a brand present between purchases — written by people, tuned by data.</p>
         <ul class="svc-specs">
           <li>Blog &amp; editorial content</li>
           <li>Social media management</li>
@@ -467,7 +467,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
       <div class="svc-body">
         <div class="svc-eyebrow">Technical &amp; strategic</div>
         <h3>SEO</h3>
-        <p>SEO that goes beyond chasing traffic. We improve the technical health of your site, target the searches that matter to your business, and create content designed to turn visibility into real opportunities.</p>
+        <p>Technical fixes, keyword strategy, and link-worthy content, tracked against rankings and revenue — not just traffic that never converts.</p>
         <ul class="svc-specs">
           <li>Technical &amp; on-page SEO</li>
           <li>Keyword &amp; content strategy</li>
@@ -488,7 +488,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
   <div class="wrap">
     <div class="head" data-reveal>
       <span class="eyebrow">Why it works</span>
-      <h2>Design, content, and search, all pulling in the same direction.</h2>
+      <h2>Design, content, and search — pulling the same direction.</h2>
     </div>
     <div class="benefits-grid" data-reveal>
       <div class="benefit-card benefit-1">
@@ -520,7 +520,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
       <div class="head">
         <span class="eyebrow">Stay in the loop</span>
         <h2>A monthly report you'll actually read.</h2>
-        <p>Know exactly what your digital presence is doing for your business. We track rankings, traffic, leads, and growth, then review it with you in plain English. No confusing reports and no vanity metrics.</p>
+        <p>Every ongoing client gets a plain-English dashboard: rankings, traffic, and leads, reviewed together every month — no jargon, no vanity metrics.</p>
       </div>
       <ul class="feature-list">
         <li><span class="feature-check">✓</span> Ranking movement for your priority keywords</li>
@@ -632,7 +632,7 @@ footer{background:var(--paper2);color:var(--ink);padding:0 0 32px}
     <div class="wrap">
       <div class="cta-inner">
         <h2>Tell us where your site is falling short.</h2>
-        <p>You don't have to start from scratch. We'll look at your current website, content, and search presence, figure out what's working and what isn't, then help you prioritize what will make the biggest difference.</p>
+        <p>We'll take a look at what you have now — the site, the content, the rankings — and tell you honestly what's worth fixing first.</p>
         <a href="contact.html" class="btn btn-fill">Get a free site review</a>
       </div>
     </div>
