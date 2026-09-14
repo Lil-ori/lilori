@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Lilori</title>
+  <meta name="description" content="Start a project or request a free site review from Lilori.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="assets/lilori-logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav id="nav">
+    <div class="nav-inner wrap">
+      <a href="index.html" class="nav-logo"><img class="brand-mark" src="assets/lilori-logo.svg" alt="Lilori"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-actions">
+          <a href="index.html#work" class="btn btn-ghost">See our work</a>
+          <a href="contact.html" class="btn btn-fill">Start a project</a>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html#work" class="nav-ghost">See our work</a>
+        <a href="contact.html" class="nav-fill">Start a project</a>
+      </div>
+      <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <main id="main">
+
+    <header class="page-hero">
+      <div class="wrap">
+        <img class="brand-mark" src="assets/lilori-logo.svg" alt="">
+        <span class="eyebrow">Contact</span>
+        <h1>Tell us where things are stuck.</h1>
+        <p>Share a little about the business and the site. We'll follow up with next steps — or a clear no if we aren't a fit.</p>
+      </div>
+    </header>
+    <section class="band">
+      <div class="wrap contact-grid">
+        <div class="contact-info" data-reveal>
+          <h3>Start here</h3>
+          <div class="info-row">
+            <div><b>Email</b><a href="mailto:hello@lilori.com">hello@lilori.com</a></div>
+          </div>
+          <div class="info-row">
+            <div><b>Typical reply</b><span>Within two business days</span></div>
+          </div>
+          <div class="info-row">
+            <div><b>Best for</b><span>Site rebuilds, SEO programs, and ongoing content</span></div>
+          </div>
+        </div>
+        <form id="contactForm" data-reveal>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="need">What do you need help with?</label>
+            <select id="need" name="need">
+              <option>A new website</option>
+              <option>SEO</option>
+              <option>Content &amp; marketing</option>
+              <option>A mix of the above</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">What's going on with the site today?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-fill">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-newsletter" data-reveal>
+        <div>
+          <h3>Stay ahead of the algorithm.</h3>
+          <p>One short email a month on what's changing in search and content — no spam.</p>
+        </div>
+        <form class="nl-form" id="nlForm">
+          <input type="email" placeholder="you@company.com" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="foot-top">
+        <div class="foot-brand">
+          <img class="brand-mark" src="assets/lilori-logo.svg" alt="Lilori">
+          <p>A small studio building websites, content, and search visibility for businesses that are ready to grow.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Studio</h4>
+          <a href="about.html">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="foot-col">
+          <h4>Services</h4>
+          <a href="index.html#services">Websites</a>
+          <a href="index.html#services">Marketing</a>
+          <a href="index.html#services">SEO</a>
+        </div>
+        <div class="foot-col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@lilori.com">hello@lilori.com</a>
+          <a href="contact.html">Contact page</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Lilori. All rights reserved.</span>
+        <div class="foot-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

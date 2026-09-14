@@ -22,6 +22,23 @@ This repository serves as the central home for Lilori development and documentat
 
 Individual client and internal projects may live within their own repositories or project directories.
 
+## Local site
+
+The public marketing site lives in `site/` and is meant to be served on the local domain **lilori.local**.
+
+```bash
+chmod +x scripts/dev.sh
+./scripts/dev.sh
+```
+
+The script maps `127.0.0.1 lilori.local` in `/etc/hosts` (via sudo, once) and serves the site at [http://lilori.local/](http://lilori.local/). To use another port:
+
+```bash
+LILORI_PORT=8080 ./scripts/dev.sh
+```
+
+Then open `http://lilori.local:8080/`.
+
 ## Development
 
 Lilori projects are primarily developed using modern web technologies and tools, including:
