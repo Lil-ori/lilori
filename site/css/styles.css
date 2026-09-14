@@ -164,15 +164,17 @@ nav.on {
 .nav-logo img,
 .nav-logo svg,
 .brand-mark {
-  height: 28px;
+  height: 34px;
   width: auto;
+  max-width: none;
   display: block;
+  flex: none;
+  image-rendering: auto;
 }
 
 .foot-brand .brand-mark {
-  height: 32px;
+  height: 36px;
   margin-bottom: 18px;
-  color: var(--ink);
 }
 
 .nav-links {
