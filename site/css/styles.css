@@ -389,9 +389,10 @@ nav.on {
 
 .hero-mark {
   position: absolute;
-  right: -4%;
-  top: 22%;
-  width: min(58vw, 720px);
+  right: 2%;
+  top: 24%;
+  width: min(46vw, 580px);
+  max-width: calc(100% - 32px);
   opacity: 0.055;
   pointer-events: none;
   user-select: none;
@@ -459,7 +460,7 @@ nav.on {
 .hero-strip {
   margin-top: 52px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
 }
 
@@ -490,32 +491,27 @@ nav.on {
   color: var(--ink-dim);
   display: block;
   margin-top: 6px;
-  max-width: 20ch;
+  max-width: 28ch;
   line-height: 1.45;
 }
 
 @media (max-width: 860px) {
   .hero-strip {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .hero-strip .stat {
     border-right: none;
     border-bottom: 1px solid var(--line);
-    padding: 20px 16px 20px 0;
+    padding: 20px 0;
   }
 
-  .hero-strip .stat:nth-child(odd) {
-    border-right: 1px solid var(--line);
-    padding-right: 16px;
-  }
-
-  .hero-strip .stat:nth-child(n + 3) {
+  .hero-strip .stat:last-child {
     border-bottom: none;
   }
 
   .hero-strip .stat:not(:first-child) {
-    padding-left: 16px;
+    padding-left: 0;
   }
 }
 
